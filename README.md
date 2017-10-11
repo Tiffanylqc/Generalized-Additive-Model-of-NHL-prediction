@@ -1,6 +1,9 @@
 # Generalized-Additive-Model-of-NHL-prediction
 
 
+## csv files
+
+### result.csv
 Based on preprocessed_datasets.csv where semantics are defined:
 
 
@@ -38,6 +41,12 @@ po_ppg    | points per game in play off for players|
 cescin    | if Country_group=='EURO' then cescin=CSS_rank*6.27, else cescin=CSS_rank*1.35|
 rs_gaa    | rs_G-rs_G_avg(in player's draft year)|
 po_gaa    | po_G-po_G_avg(in player's draft year)|
+
+### test1.csv test2.csv train1.csv train2.csv
+These four files are part of result.csv and divided according to the draft year
+
+### test1_withpredict.csv test2_withpredict.csv
+Add the predict value for sum_7yr_GP using GAM model to test1.csv and test2.csv
 
 
 ## Python
